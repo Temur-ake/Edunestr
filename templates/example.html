@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    /* General Styles for Contact Section */
+    .contact-us {
+        padding: 50px 0;
+    }
+
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .fill-form {
+        margin-top: 20px;
+    }
+
+    /* Responsive Styles for Contact Section */
+    @media (max-width: 992px) {
+        .contact-us .col-lg-5, .contact-us .col-lg-7 {
+            margin-bottom: 20px;
+        }
+
+        .map-container {
+            padding-top: 60%; /* Adjust aspect ratio for smaller screens */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .fill-form {
+            padding: 10px;
+        }
+
+        .contact-us .col-lg-6,
+        .contact-us .col-lg-7,
+        .contact-us .col-lg-12 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .contact-us .info-post {
+            text-align: center;
+        }
+
+        .contact-us .info-post img {
+            width: 24px;
+            height: auto;
+        }
+
+        .contact-us .info-post a {
+            font-size: 14px;
+        }
+
+        .contact-us .fill-form input,
+        .contact-us .fill-form select,
+        .contact-us .fill-form button {
+            width: 100%;
+        }
+
+        .contact-us .map-container {
+            padding-top: 75%; /* Adjust for very small screens */
+        }
+    }
+
+    /* General Styles for Pre-header */
+    .pre-header {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+    }
+
+    .pre-header .info,
+    .pre-header .social-icons {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .pre-header .info li,
+    .pre-header .social-icons li {
+        margin-bottom: 5px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .social-icons li {
+        margin: 0 10px;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .social-icons i {
+        font-size: 24px;
+    }
+
+    .phone-link {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .phone-link:focus,
+    .phone-link:active {
+        color: blue;
+    }
+
+    .phone-link i {
+        color: black;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .phone-link:focus i,
+    .phone-link:active i {
+        color: blue;
+    }
+
+    /* Responsive Styles for Pre-header */
+    @media (max-width: 768px) {
+        .pre-header .info,
+        .pre-header .social-icons {
+            text-align: center;
+        }
+
+        .pre-header .info li,
+        .pre-header .social-icons li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .social-icons i {
+            font-size: 20px;
+        }
+
+        .phone-link {
+            font-size: 14px;
+        }
+
+        .phone-link i {
+            font-size: 14px;
+        }
+    }
+
+    /* General Styles for Header */
+    .header-area {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .header-area .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .header-area .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header-area .main-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .header-area .main-nav ul li {
+        margin: 0 15px;
+    }
+
+    .header-area .main-nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .header-area .menu-trigger {
+        display: none; /* Hide menu trigger on large screens */
+    }
+
+    /* Responsive Styles for Header */
+    @media (max-width: 768px) {
+        .header-area .main-nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header-area .main-nav ul {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .header-area .main-nav ul li {
+            margin: 10px 0;
+        }
+
+        .header-area .menu-trigger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .header-area .menu-trigger span {
+            font-size: 18px;
+        }
+    }
+</style>
+<body>
+
+</body>
+</html>
