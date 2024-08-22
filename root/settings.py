@@ -38,20 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps',
     'mptt',
-    'import_export',
-    'django_ckeditor_5',
-    'django_recaptcha',
-    "allauth",
-    "allauth.account",
-
-    "allauth.socialaccount",
-
-    "allauth.socialaccount.providers.google",
-    "allauth.socialaccount.providers.facebook",
-    "allauth.socialaccount.providers.telegram",
-    "allauth.socialaccount.providers.github",
     'phonenumber_field',
-    'phonenumbers',
 
 ]
 
@@ -63,7 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = 'root.urls'

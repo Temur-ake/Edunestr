@@ -16,11 +16,83 @@
 
     <title>Edunest learning centre</title>
     <style>
+        .logo {
+            position: absolute;
+            top: 0px;
+            left: 10px;
+            margin-left: 150px;
+            margin-top: -30px;
+        }
+
+        .logo img {
+            width: 250px;
+            height: 150px;
+        }
+
+        @media (max-width: 1200px) {
+            .logo {
+                top: 10px; /* Add a bit of margin from the top */
+                left: 20px; /* Adjust left positioning */
+                margin-left: 100px; /* Reduce left margin */
+                margin-top: -20px; /* Adjust top margin */
+            }
+
+            .logo img {
+                width: 200px; /* Adjust width */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+
+        /* For screens smaller than 992px */
+        @media (max-width: 992px) {
+            .logo {
+                top: 20px; /* Increase top margin for better spacing */
+                left: 15px; /* Adjust left positioning */
+                margin-left: 50px; /* Further reduce left margin */
+                margin-top: -10px; /* Adjust top margin */
+            }
+
+            .logo img {
+                width: 180px; /* Adjust width */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+
+        /* For screens smaller than 768px */
+        @media (max-width: 768px) {
+            .logo {
+                top: 10px; /* Maintain top margin */
+                left: 5px; /* Align logo closer to the left edge */
+                margin-left: 10px; /* Minimal margin on the left */
+                margin-top: 0; /* Remove negative top margin */
+            }
+
+            .logo img {
+                width: 150px; /* Further reduce width */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+
+        /* For screens smaller than 576px */
+        @media (max-width: 576px) {
+            .logo {
+                top: 0; /* Ensure proper top margin */
+                left: 0; /* Align logo to the left edge */
+                margin-right: 40px; /* Remove extra left margin */
+                margin-top: -30px; /* Ensure no negative margin */
+            }
+
+            .logo img {
+                width: 40px; /* Reduce width for small screens */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+
         /* General Styles */
         .pre-header {
             background-color: #f8f9fa;
             padding: 10px 0; /* Increased padding */
-            margin-bottom: 10px; /* Space between header and pre-header */
+            margin-bottom: 30px; /* Space between header and pre-header */
         }
 
         .pre-header .info,
@@ -42,7 +114,7 @@
         }
 
         .social-icons li {
-            margin: 0 20px; /* Increased spacing between icons */
+            margin: 0 25px; /* pre header ikonkalari orasidagi farq */
         }
 
         .social-icons a {
@@ -51,7 +123,7 @@
         }
 
         .social-icons i {
-            font-size: 24px;
+            font-size: 22px; /* ikonkalar ni razmeri */
         }
 
         .phone-link {
@@ -624,7 +696,7 @@
                             <!-- Mobile CSS -->
 
 
-                        q</div>
+                        </div>
                         <div class="col-lg-7">
                             <div class="fill-form">
                                 <div class="row">
