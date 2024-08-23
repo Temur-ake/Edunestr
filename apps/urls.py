@@ -11,3 +11,5 @@ urlpatterns = [
     path('staff/admin/', AdminView.as_view(), name='admin_view'),
     path('download-pdf/', download_pdf, name='download_pdf'),
 ]
+
+
