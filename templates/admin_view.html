@@ -13,16 +13,42 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            background-color: #fff;
         }
 
         th, td {
@@ -39,12 +65,54 @@
         tr:hover {
             background-color: #f5f5f5;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            .btn-primary {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            th, td {
+                display: block;
+                text-align: right;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            th::before, td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <h1>Admin View</h1>
-    <a href="{% url 'download_pdf' %}" class="btn btn-primary">Download PDF</a>
+    <a href="{% url 'download_pdf' %}" class="btn-primary">Download PDF</a>
 
     <table>
         <thead>
@@ -60,12 +128,12 @@
         <tbody>
         {% for contact in contacts %}
             <tr>
-                <td>{{ contact.name }}</td>
-                <td>{{ contact.surname }}</td>
-                <td>{{ contact.phone }}</td>
-                <td>{{ contact.email }}</td>
-                <td>{{ contact.course_type }}</td>
-                <td>{{ contact.created_at }}</td>
+                <td data-label="Name">{{ contact.name }}</td>
+                <td data-label="Surname">{{ contact.surname }}</td>
+                <td data-label="Phone">{{ contact.phone }}</td>
+                <td data-label="Email">{{ contact.email }}</td>
+                <td data-label="Course Type">{{ contact.course_type }}</td>
+                <td data-label="Created At">{{ contact.created_at }}</td>
             </tr>
         {% endfor %}
         </tbody>
