@@ -178,8 +178,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Directory to store uploaded medi
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+
 customColorPalette = [
     {
         'color': 'hsl(4, 90%, 58%)',
@@ -262,10 +261,8 @@ CKEDITOR_5_CONFIGS = {
     }
 }
 
-# IMPORT_FORMATS = [CSV, XLSX]
-
 JAZZMIN_SETTINGS = {
-    "site_title": "Temurs Administration",
+    "site_title": "Temurs1 Administration",
     "site_header": "Temur",
     "site_brand": "Temur",
     "site_logo": "image/Fenix.png",
